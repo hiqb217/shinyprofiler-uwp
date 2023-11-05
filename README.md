@@ -1,3 +1,11 @@
+# What's this project/fork?
+
+This is a fork making minor modifications and additions to the [Shiny Profiler](https://github.com/aidinabedi/shinyprofiler) project by [aidinabedi](https://github.com/aidinabedi) on GitHub. There's a new CMakeLists file in the main directory for compiling specifically for UWP setups and some minor changes to allow the preprocessor `SHINY_HAS_ENABLED` variable to compile properly elsewhere in `ShinyManager.c`. 
+
+Otherwise, the rest of the very usable library has remained untouched!
+
+Remainder of the README below is from the original repo:
+
 # What is Shiny?
 
 Shiny is a lightning fast, fully documented and by far the-easiest-to-use-ever C/C++/Lua high-performance profiler with no extensive surgery for your existing projects. Results are smoothed and shown in run-time as a call-tree or sorted-by-time. Output is also renderable as graphs in Ogre3D and easily customized to any other graphics engine!
