@@ -49,7 +49,7 @@ THE SOFTWARE.
 /* if SHINY_HAS_ENABLED is defined to TRUE then Shiny can be enabled and disabled at runtime. TODO: bla bla...
  */
 #ifndef SHINY_HAS_ENABLED
-#define SHINY_HAS_ENABLED		FALSE
+#define SHINY_HAS_ENABLED		TRUE
 #endif
 
 /* TODO: 

@@ -127,7 +127,7 @@ void ShinyManager_preLoad(ShinyManager *self) {
 
 void ShinyManager_update(ShinyManager *self) {
 #if SHINY_HAS_ENABLED == TRUE
-	if (!enabled) return;
+	if (!self->enabled) return;
 #endif
 
 	_ShinyManager_appendTicksToCurNode(self);
@@ -149,7 +149,7 @@ void ShinyManager_update(ShinyManager *self) {
 
 void ShinyManager_updateClean(ShinyManager *self) {
 #if SHINY_HAS_ENABLED == TRUE
-	if (!enabled) return;
+	if (!self->enabled) return;
 #endif
 
 	_ShinyManager_appendTicksToCurNode(self);

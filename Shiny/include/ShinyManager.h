@@ -32,7 +32,7 @@ THE SOFTWARE.
 #include "ShinyOutput.h"
 
 #include <stdio.h>
-
+#include <stdbool.h>
 
 #if SHINY_IS_COMPILED == TRUE
 
@@ -169,7 +169,7 @@ SHINY_INLINE void ShinyManager_lookupAndBeginNode(ShinyManager *self, ShinyNodeC
 
 SHINY_INLINE void ShinyManager_endCurNode(ShinyManager *self) {
 #if SHINY_HAS_ENABLED == TRUE
-	if (!enabled) return;
+	if (!self->enabled) return;
 #endif
 
 	_ShinyManager_appendTicksToCurNode(self);
